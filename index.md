@@ -12,7 +12,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 Syntax highlighted code block
 
 Milestone One
-  This is a Code Review Video at [(https://www.loom.com/share/1ad24d19309b48c3b39fcd978ce13a2c)]
+  View my video of [Code Review] (https://www.loom.com/share/1ad24d19309b48c3b39fcd978ce13a2c).
 ## Header 2
 ### Header 3
 
