@@ -9,12 +9,23 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
 ```markdown
-Syntax highlighted code block
+#SNHU-CS-CAPSTONE
+SNHU Capstone Portfolio for Troy Smith CS-499
+There are four Milestones related to my final project for the SNHU computer science capstone.
 
-Milestone One
+There are three programs within the repository displaying my different computer science skills and abilities.
+1. Software Design and Engineering - Transform a project into another coding language
+2. Algorithms and Data Structure - Improve Efficiency 
+3. Databases - Create a MongoDB using a RESTful API
+
+## Milestone One
   View my video of [Code Review] (https://www.loom.com/share/1ad24d19309b48c3b39fcd978ce13a2c).
-## Header 2
-### Header 3
+  
+## Milestone Two
+
+## Milestone Three
+
+## Milestone Four
 
 - Bulleted
 - List
