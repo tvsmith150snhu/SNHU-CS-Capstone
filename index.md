@@ -98,6 +98,7 @@ Here are examples of data visualization using the dashboard code found within th
 
 
 **Enhancement**
+
 For the enhancement portion of this project, I chose to create a RESTful API that creates and accesses a Mongo DB.  REST stands for Representation, State, Transfer or basically the same as CRUD.  I utilized the features of the Visual Studio Code IDE to construct and manipulate the database hosted on the local device using port 3000.
 
 Here is an example of the successful connection to the database.
