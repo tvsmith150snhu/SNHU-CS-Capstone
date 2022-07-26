@@ -47,7 +47,7 @@ This artifact and its enhancement meets the course objectives in innovative skil
 
 
 ## Milestone Four
-<u>**Artifact Selection**<u>
+**Artifact Selection**
 
 The Artifact I have chosen to display my ability to store, manipulate and access data within a database is the one from my CS 340 course on October 18, 2021.  The code worked within a provided Mongo database hosted on a Virtual Machine within the course.  I also constructed code to provide a dashboard that accessed the database and referenced maps in correlation to the data.  
 
