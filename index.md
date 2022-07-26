@@ -12,6 +12,7 @@ There are three programs within the repository displaying my different computer 
   
   Please enjoy my video of [Code Review](https://www.loom.com/share/1ad24d19309b48c3b39fcd978ce13a2c).
   
+  
 ## Milestone Two
 The Artifact chosen to display my work and skills learned in Software Engineering and Design is the Authentication program written in Java code and created in my IT 145 course on April 22, 2018.  This program uses the MD5 hash method to authenticate users into the Zoo Authentication System allowing them three chances before stopping any further attempts.  Once successful authentication is achieved, the user is greeted with a message according to their role in the Zoo system, which are admin, veterinarian, zookeeper or coder.  
 
@@ -30,6 +31,7 @@ Most of the challenge in enhancing the code was recalling the nuances of the Pyt
 
 
 
+
 ## Milestone Three
 The Artifact I have chosen to display my work and skills learned in Algorithms and Data Structure is Binary Search Tree Algorithm from my CS 260 course on February 16, 2020.  The program reads from a CSV file and uses the algorithm to search the data listed within the file.  It then uses a linked list to store the data to sort and search it.  
 
@@ -44,6 +46,7 @@ Python was the language used in my first introduction to coding in my CS 200 cou
 Challenges faced in this project were recalling how to configure the Eclipse IDE in the Windows environment, then discovering the Visual Studio Code IDE and configuring openpyxl, xlsxwriter and xlrd packages within it.  I first contacted Professor John Watson from the CS 260 course who graciously sent the configurations page that I failed to save from the original course that explained how to set up Eclipse in Windows for the original code.  However, during my wait for his email reply, I discovered my MacBook Air could run the code in Eclipse without any special configuration of the IDE!  This surprised me because I replaced the MacBook since the course.  Thankfully I allowed the MacBook to update from the previous one and it actually had the program stored in history!  Even so, I needed another IDE that was versatile and provided a better environment for the Python enhanced code.  I quickly discovered the Visual Studio Code IDE (not to be confused with Visual Basic Studio) and its intuitive qualities, but struggled to get the openpyxl, xlsxwriter and xlrd packages configured within that environment on both the Mac and Windows platforms.  After a few YouTube video and Stack Overflow tutorials I was in business!  I was able to compile the enhanced code and see the algorithm and data structure work as planned and then open the MS Excel worksheet to see the items I added to the list from the user choice menu.
 
 This artifact and its enhancement meets the course objectives in innovative skills and techniques used for accomplishing my goals by displaying how I am able to implement algorithms and data structures to write and read from the Excel Workbook using intuitive user input from the code that is kept clean and legible in a manner that other computer scientists can review and improve.  It solves user problems by allowing them to add data to the worksheet from within the program using libraries such as Pandas that uses openpyxl to write to the xlsx format.   Overall this project gave me a better understanding of data structures and algorithms and how to use them to provide solutions and solve problems.
+
 
 
 ## Milestone Four
