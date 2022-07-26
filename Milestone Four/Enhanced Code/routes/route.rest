@@ -1,0 +1,39 @@
+// Troy Smith
+// CS-499-H6771
+// Milestone Four
+
+// This code is used to pass requests to the database
+// It is interactive by clicking the Send Request command
+// Separate each commmand with ### and allow an extra space for input
+
+
+GET http://localhost:3000/dogs
+
+###
+
+GET http://localhost:3000/dogs/
+
+###
+
+POST http://localhost:3000/dogs
+Content-Type: application/json
+
+{
+    "name": "Dover",
+    "dogFromShelter": "Anderson County Shelter"
+}
+
+###
+
+DELETE http://localhost:3000/dogs/
+62d76b1f79ea45db52d10785
+
+###
+
+PATCH http://localhost:3000/dogs/
+
+Content-Type: application/json
+62d75d4d09540e6f38635435
+{
+    "name": "New Name"
+}
