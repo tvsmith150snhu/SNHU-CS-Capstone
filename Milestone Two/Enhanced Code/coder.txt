@@ -1,0 +1,4 @@
+  Hello, System Coder!
+
+As Coder, you have access to the zoo's main computer system and source code.  
+This allows you to monitor users in the system and their roles and manipulate the source code.
