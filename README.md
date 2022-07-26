@@ -12,6 +12,7 @@ There are three programs within the repository displaying my different computer 
   
   Please enjoy my video of [Code Review](https://www.loom.com/share/1ad24d19309b48c3b39fcd978ce13a2c).
   
+  
 ## Milestone Two
 The Artifact chosen to display my work and skills learned in Software Engineering and Design is the Authentication program written in Java code and created in my IT 145 course on April 22, 2018.  This program uses the MD5 hash method to authenticate users into the Zoo Authentication System allowing them three chances before stopping any further attempts.  Once successful authentication is achieved, the user is greeted with a message according to their role in the Zoo system, which are admin, veterinarian, zookeeper or coder.  
 
@@ -27,6 +28,7 @@ Most of the challenge in enhancing the code was recalling the nuances of the Pyt
    
   
   ![image](https://user-images.githubusercontent.com/85906554/180590138-162ecfea-9cde-4ca8-a426-f58cb9a18172.png)
+
 
 
 
@@ -46,4 +48,89 @@ Challenges faced in this project were recalling how to configure the Eclipse IDE
 This artifact and its enhancement meets the course objectives in innovative skills and techniques used for accomplishing my goals by displaying how I am able to implement algorithms and data structures to write and read from the Excel Workbook using intuitive user input from the code that is kept clean and legible in a manner that other computer scientists can review and improve.  It solves user problems by allowing them to add data to the worksheet from within the program using libraries such as Pandas that uses openpyxl to write to the xlsx format.   Overall this project gave me a better understanding of data structures and algorithms and how to use them to provide solutions and solve problems.
 
 
+
 ## Milestone Four
+**Artifact Selection**
+
+The Artifact I have chosen to display my ability to store, manipulate and access data within a database is the one from my CS 340 course on October 18, 2021.  The code worked within a provided Mongo database hosted on a Virtual Machine within the course.  I also constructed code to provide a dashboard that accessed the database and referenced maps in correlation to the data.  
+
+**Reason for Inclusion**
+
+Databases are included in most applications, websites and systems used throughout many industries and are required to be protected and maintained by Computer Scientists that are well equipped to handle the tasks.  Inclusion of this database artifact in my portfolio demonstrates my ability to do just that and prove my worth and skills within database work and my ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals.  I accomplished in both the original artifact and the enhanced artifact by developing a CRUD mongo DB allows users to create, read, update and delete items within collections contained within the database models.  The original artifact also uses authentication methods to develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources. 
+ 
+This is an example of me create an account within a Mongo DB for an administrator and user within a terminal.
+
+Administrative:
+![image](https://user-images.githubusercontent.com/85906554/181065451-c878381b-de7b-4216-9b83-611245b35374.png)
+
+User:
+![image](https://user-images.githubusercontent.com/85906554/181067208-99818685-dbb8-4152-8c22-6dc91dff298b.png)
+
+Here I create a Python test script that imports a CRUD Python module to call and test the ‘create’ and ‘read’ functionality.
+![image](https://user-images.githubusercontent.com/85906554/181067454-49b4e9cc-a7e0-4aee-b2df-8973e6de7dc3.png)
+![image](https://user-images.githubusercontent.com/85906554/181067513-ec61d289-ae8f-4dc1-bf93-5a3841e8d2eb.png)
+
+![image](https://user-images.githubusercontent.com/85906554/181067584-de025b43-59a7-4e3d-b606-c62f80a35229.png)
+
+And add new Item (Create)
+![image](https://user-images.githubusercontent.com/85906554/181067767-81e70a0c-eafc-4ff2-bdc9-ce8192b2cf0f.png)
+
+Update an item (Update)
+![image](https://user-images.githubusercontent.com/85906554/181067847-cede0e2c-9840-4a97-ab16-bf45ea7f8c09.png)
+
+Search for an Item (Read)
+![image](https://user-images.githubusercontent.com/85906554/181067917-e51b869d-a843-4548-8c72-a3986935cc6e.png)
+
+Remove an item (Delete)
+![image](https://user-images.githubusercontent.com/85906554/181067992-60380d72-834d-4e97-a733-27036d7a82b3.png)
+
+Here are examples of data visualization using the dashboard code found within the Project Two Dashboard file.
+![image](https://user-images.githubusercontent.com/85906554/181068111-844134c5-dcb5-46fe-995e-8f5e959a2925.png)
+
+![image](https://user-images.githubusercontent.com/85906554/181068167-cb7c3dc2-eeed-455b-b3cc-904be0070958.png)
+
+![image](https://user-images.githubusercontent.com/85906554/181068224-d60125ee-d839-490e-b6a0-228222ff76e7.png)
+
+![image](https://user-images.githubusercontent.com/85906554/181068279-02d2593f-87fb-4da7-af63-00803d9baf45.png)
+
+![image](https://user-images.githubusercontent.com/85906554/181068310-57598464-ec5d-4ea9-8584-6219ef9640ae.png)
+
+![image](https://user-images.githubusercontent.com/85906554/181068352-18414d31-b242-40b9-b45e-1c270ee2cd68.png)
+
+![image](https://user-images.githubusercontent.com/85906554/181068376-ea197883-3956-4031-8d85-5a11b44a0897.png)
+
+
+**Enhancement**
+
+For the enhancement portion of this project, I chose to create a RESTful API that creates and accesses a Mongo DB.  REST stands for Representation, State, Transfer or basically the same as CRUD.  I utilized the features of the Visual Studio Code IDE to construct and manipulate the database hosted on the local device using port 3000.
+
+Here is an example of the successful connection to the database.
+
+![image](https://user-images.githubusercontent.com/85906554/181068705-70dd030c-ceb7-4e01-bac2-c9d1d82eeaaf.png)
+
+![image](https://user-images.githubusercontent.com/85906554/181068768-27bf526c-ba74-46de-981c-eec1419fc31b.png)
+
+Accessing items within the database.
+
+![image](https://user-images.githubusercontent.com/85906554/181068875-b25fc8f7-5ac6-401b-915b-09bf9e47a740.png)
+
+Creating one within the database.
+
+![image](https://user-images.githubusercontent.com/85906554/181068959-04a6be2d-aaa1-44be-bfde-4786a4a7f82c.png)
+
+
+**Course Objectives**
+
+This project met me course objective from Module One by displaying my skills and abilities to work with and within databases.  I consider it a valuable inclusion in my portfolio and learned more than I anticipated during its construction. .  Inclusion of this database artifact in my portfolio demonstrates my ability to do just that and prove my worth and skills within database work and my ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals.  I accomplished in both the original artifact and the enhanced artifact by developing a CRUD mongo DB allows users to create, read, update and delete items within collections contained within the database models.  The original artifact also uses authentication methods to develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources. 
+
+
+**Challenges and Lessons Learned**
+
+This was my first time working with the REST API and was impressed with the Visual Studio Code’s ability to intuitively install necessary and helpful extensions at will.  It included the REST client that allowed me to run my .rest commands in a real-time mode to see the results immediately and included all the necessary components to construct my code.
+
+There weren’t as many challenges as I first anticipated, but one in particular was coding the server file correctly and getting the expected “Server Started” and “Connected to Database” prompt.  Thankfully after reviewing several YouTube videos and searching Stack Overflow posts, I successfully started the server and proceeded with the other code.  
+
+In the end, I learned much more about REST and how it operates within the VS Code IDE.  I consider the VS Code to be my new favorite IDE!
+
+
+
