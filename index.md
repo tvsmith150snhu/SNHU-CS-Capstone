@@ -107,8 +107,26 @@ Here is an example of the successful connection to the database.
 ![image](https://user-images.githubusercontent.com/85906554/181068768-27bf526c-ba74-46de-981c-eec1419fc31b.png)
 
 Accessing items within the database.
+
 ![image](https://user-images.githubusercontent.com/85906554/181068875-b25fc8f7-5ac6-401b-915b-09bf9e47a740.png)
 
 Creating one within the database.
+
 ![image](https://user-images.githubusercontent.com/85906554/181068959-04a6be2d-aaa1-44be-bfde-4786a4a7f82c.png)
+
+
+**Course Objectives**
+
+This project met me course objective from Module One by displaying my skills and abilities to work with and within databases.  I consider it a valuable inclusion in my portfolio and learned more than I anticipated during its construction. .  Inclusion of this database artifact in my portfolio demonstrates my ability to do just that and prove my worth and skills within database work and my ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals.  I accomplished in both the original artifact and the enhanced artifact by developing a CRUD mongo DB allows users to create, read, update and delete items within collections contained within the database models.  The original artifact also uses authentication methods to develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources. 
+
+
+**Challenges and Lessons Learned**
+
+This was my first time working with the REST API and was impressed with the Visual Studio Code’s ability to intuitively install necessary and helpful extensions at will.  It included the REST client that allowed me to run my .rest commands in a real-time mode to see the results immediately and included all the necessary components to construct my code.
+
+There weren’t as many challenges as I first anticipated, but one in particular was coding the server file correctly and getting the expected “Server Started” and “Connected to Database” prompt.  Thankfully after reviewing several YouTube videos and searching Stack Overflow posts, I successfully started the server and proceeded with the other code.  
+
+In the end, I learned much more about REST and how it operates within the VS Code IDE.  I consider the VS Code to be my new favorite IDE!
+
+
 
