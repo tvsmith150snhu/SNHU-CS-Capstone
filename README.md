@@ -7,6 +7,30 @@ There are three programs within the repository displaying my different computer 
 2. Algorithms and Data Structure - Improve Efficiency 
 3. Databases - Create a MongoDB using a RESTful API
 
+## Strengths (Self Assessment)
+
+### Software Engineering and Security
+
+I entered the Computer Science Program at Southern New Hampshire University in September of 2017 and continued that trek for five years while working a full-time career and supporting a family.  I have learned how computer hardware, software and applications work in concert to provide problem solving tools for small and large business and personal users as well.  At the base of these problem solving tools are well written and informatively commented code that afford computer scientists not only the ability to solve the problem, but allows others to enhance the code and make it better or more versatile to solve other problems or modernize it for future endeavors.  This explores strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science and is shown in the Software Design and Engineering artifact presented in this portfolio in which I enhance the original authentication program written in Java by writing it in Python and improving the MD5 hash function’s speed, reducing resource utilization on the computer’s hardware.  This artifact also demonstrates how I have developed a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources by creating the MD5 authentication and reducing the amount of resources necessary to run it.  This artifact presentation also includes a flowchart and demonstrated my ability to design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts.  These artifacts demonstrate my strength and ability to develop and maintain code in multiple coding languages and produce flowcharts or in some cases Pseudocode.
+
+### Data Structures and Algorithms
+
+As a working professional, I hope to solidify my future as a computer scientist in my existing career and possibly advance into a more lucrative career, should the opportunity present.  As data increases and technology advances, computer scientists will prevail as pillars within most if not all industries and be necessary to contend and maintain complex business systems.  Being able to design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while maintaining  the trade-offs involved in design choices is paramount.  I demonstrate my ability to construct and work with algorithms and data structures in my Binary Search Tree algorithm artifact written in the C++ language.  The original algorithm searches files in the CSV format, while the enhanced algorithm is written in the Python language and searches an XLSX formatted file using traversal method in a more efficient manner.  These artifacts demonstrate my strength to work with algorithms and data structures as a competent computer scientist.
+ 
+
+### Databases
+
+The ability to create, read, update and delete data within a secure and accessible database in another trait of a well-educated and versatile computer scientist.  The ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals is demonstrated in my database artifact, where I display a dashboard created for a company to utilize a Mongo database, secure that database with credentials and am able to use the CRUD (Create, Read, Update and Delete) method within it.  I then show my abilities to create an enhanced ReSTful (Representation, State, and Transfer) API using a locally hosted Mongo database that includes JSON formatted collections.  These artifacts display my strength to create and use database structures.
+
+### Team Environments
+
+During my courses at SNHU, I have learned that teamwork is imperative when designing complex programs and software.  To keep the team focused and project milestones met, methodologies such as Agile were introduced and discussed during courses to introduce us to productive team concepts.  Other sharing methods, such as GitHub and Bit Bucket were introduced to provide a team sharing platform to improve and advance code.  These sites allow blame and version recovery capabilities to correct mistakes and educate team members in a constructive manner.   Exposure to these team environments and tools will benefit me as I become a productive member of a team of computer scientists.  
+
+### Communication to Stakeholders
+
+The ability to communicate to stakeholders in written, oral and a visual manner is vital for a successful computer scientist.   Written communication may be in the form of comments within lines of code, readme files or a simple email.  Visual communication may be in flowcharts, diagrams or Power Point presentations.  Oral communication may be in person, in virtual meetings or in videos, such as the Code Review milestone of this portfolio.  Stakeholders may include potential employers, current superiors, customers, or other collaborators on the same team.  Communication delivered in a concise and prompt manner will benefit and promote computer scientists that utilize it in an educated manner.
+
+
 ## Milestone One
   This Milestone includes a recorded narative of my selection of artifacts for the portfolio, the review of the original code and my plan to enhance the code.
   
