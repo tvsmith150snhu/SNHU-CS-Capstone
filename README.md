@@ -11,11 +11,11 @@ There are three programs within the repository displaying my different computer 
 
 ##### Software Engineering and Security
 
-I entered the Computer Science Program at Southern New Hampshire University in September of 2017 and continued that trek for five years while working a full-time career and supporting a family.  I have learned how computer hardware, software and applications work in concert to provide problem solving tools for small and large business and personal users as well.  At the base of these problem solving tools are well written and informatively commented code that afford computer scientists not only the ability to solve the problem, but allows others to enhance the code and make it better or more versatile to solve other problems or modernize it for future endeavors.  This explores strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science and is shown in the Software Design and Engineering artifact presented in this portfolio in which I enhance the original authentication program written in Java by writing it in Python and improving the MD5 hash function’s speed, reducing resource utilization on the computer’s hardware.  This artifact also demonstrates how I have developed a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources by creating the MD5 authentication and reducing the amount of resources necessary to run it.  This artifact presentation also includes a flowchart and demonstrated my ability to design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts.  These artifacts demonstrate my strength and ability to develop and maintain code in multiple coding languages and produce flowcharts or in some cases Pseudocode.
+I entered the Computer Science Program at Southern New Hampshire University in September of 2017 and continued that trek for five years while working a full-time career and supporting a family.  I have learned how computer hardware, software and applications work in concert to provide problem solving tools for small and large business and personal users as well.  At the base of these problem solving tools are well written and informatively commented code that afford computer scientists not only the ability to solve the problem, but allows others to enhance the code and make it better or more versatile to solve other problems or modernize it for future endeavors.  This explores strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science and is shown in the Software Design and Engineering artifact presented in this portfolio in which I enhance the original authentication program written in Java by writing it in Python and improving the MD5 hash function’s speed, reducing resource utilization on the computer’s hardware.  This artifact also demonstrates how I have developed a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources by creating the MD5 authentication and reducing the amount of resources necessary to run it.  This artifact presentation also includes a flowchart and demonstrated my ability to design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts.  These artifacts demonstrate my strength and ability to develop and maintain code in multiple coding languages and produce flowcharts or in some cases Pseudocode, which is included in Milestone Three.
 
 ##### Data Structures and Algorithms
 
-As a working professional, I hope to solidify my future as a computer scientist in my existing career and possibly advance into a more lucrative career, should the opportunity present.  As data increases and technology advances, computer scientists will prevail as pillars within most if not all industries and be necessary to contend and maintain complex business systems.  Being able to design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while maintaining  the trade-offs involved in design choices is paramount.  I demonstrate my ability to construct and work with algorithms and data structures in my Binary Search Tree algorithm artifact written in the C++ language.  The original algorithm searches files in the CSV format, while the enhanced algorithm is written in the Python language and searches an XLSX formatted file using traversal method in a more efficient manner.  These artifacts demonstrate my strength to work with algorithms and data structures as a competent computer scientist.
+As a working professional, I hope to solidify my future as a computer scientist in my existing career and possibly advance into a more lucrative career, should the opportunity present.  As data increases and technology advances, computer scientists will prevail as pillars within most if not all industries and be necessary to contend and maintain complex business systems.  Being able to design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while maintaining  the trade-offs involved in design choices is paramount.  I demonstrate my ability to construct and work with algorithms and data structures in my Binary Search Tree algorithm artifact written in the C++ language.  The original algorithm searches files in the CSV format, while the enhanced algorithm is written in the Python language and searches an XLSX formatted file using traversal method in a more efficient manner.  These artifacts demonstrate my strength to work with algorithms and data structures as a competent computer scientist.  It also includes Pseudocode and demonstrates my ability to plan and produce that type of code.
  
 
 ##### Databases
@@ -53,7 +53,7 @@ Most of the challenge in enhancing the code was recalling the nuances of the Pyt
   
   ![image](https://user-images.githubusercontent.com/85906554/180590138-162ecfea-9cde-4ca8-a426-f58cb9a18172.png)
   
- ## Java Code:
+## Java Code:
 
 ```
 
@@ -452,6 +452,176 @@ Challenges faced in this project were recalling how to configure the Eclipse IDE
 
 This artifact and its enhancement meets the course objectives in innovative skills and techniques used for accomplishing my goals by displaying how I am able to implement algorithms and data structures to write and read from the Excel Workbook using intuitive user input from the code that is kept clean and legible in a manner that other computer scientists can review and improve.  It solves user problems by allowing them to add data to the worksheet from within the program using libraries such as Pandas that uses openpyxl to write to the xlsx format.   Overall this project gave me a better understanding of data structures and algorithms and how to use them to provide solutions and solve problems.
 
+## Pseudocode:
+
+```
+
+This code will input data from a CSV file into a container that can be sorted by two algorithms – a selection and quick sort method.  It will produce an output menu of:
+  Menu:
+    1. Load Bids
+    2. Display All Bids
+    3. Find Bid
+    4. Remove Bid
+    9. Exit
+  Enter choice:  
+PSUEDOCODE:
+//==============================================================
+// Global definitions visible to all methods and classes
+//==============================================================
+CREATE forward declarations;
+DEFINE a structure to hold bid information;
+	string bid ID;
+	string title;
+	string fund;
+	double amount;
+		SET amount = 0.0;
+	DEFINE structure for tree node;
+		left node (set to nullptr);
+		right node (set to nullptr);
+//==============================================================
+// Binary Search Tree class definition
+//==============================================================
+CREATE private class;
+	Node root;
+		Void add node;
+		Void inOrder node;
+		Remove node function;
+CREATE public class;
+	Binary Search Tree;
+	Void InOrder function;
+	Void insert;
+	Void remove;
+	Bid search using bid Id string;
+CREATE default constructor;
+	Node “root” SET to nullptr;
+CREATE destructor;
+	Recurse from root deleting every node;
+TRAVERSE the tree in order;
+	CALL BinarySearchTree function;
+INSERT a bid;
+	CALL BinarySearchTree function :: Insert bid;
+		IF list is empty (root = nullptr);
+			INSERT bid as root node;
+		ELSE
+			ADD node after root node;
+REMOVE a bid;
+	CALL BinarySearchTree function :: Remove bid;
+SEARCH for a bid;
+	IMPLEMENT searching the tree for a bid using bid ID;
+		Start searching from the root node;
+		Keep looping downwards until bottom reached or bid is found;
+			WHILE current node isn’t null;
+				IF current node matches, return it;
+				IF bid is smaller than current then traverse left;
+				ELSE traverse right side of tree;
+//==============================================================
+// Static methods used for testing
+//==============================================================
+DISPLAY the bid information;
+	bid ID: bid title, |, bid amount, |, bid fund;
+PROMPT user for bid information;
+	“Enter ID: “
+		INPUT bid ID;
+	“Enter title”
+		INPUT bid title;
+	“Enter fund”
+		INPUT bid fund;
+	“Enter amount”
+		INPUT bid amount;
+	RETURN bid;
+LOAD a CSV file containing bids into a container;
+	INITIALIZE the CSV Parser;
+		TRY
+			loop to read rows of a CSV file;
+			FOR
+				INITIALIZE a bid from data in current row;
+					bid ID;
+					bid title;
+					bid fund;
+					bid amount;
+			PUSH this bid to the end;
+				push_back (bid);
+		CATCH
+			list not found (if CSV file isn’t found);
+	
+//==============================================================
+// Quick Sort method logic over bid title
+//==============================================================
+PARTITION the vector of bids into two parts, high and low;
+	low bid = beginning;
+	high bid = end;
+	PICK the middle element as the PIVOT point;
+		PIVOT = begin + (end – beginning) / 2;
+		WHILE not done (done = false (Boolean));
+			keep incrementing low as long as it is less than the pivot;
+			keep decrementing high as long as it is less than the pivot;
+				IF 
+					low is greater than or equal to high (>=);
+						done is TRUE;
+				ELSE
+					SWAP the low and high bids using the built-in 										vector method;
+			MOVE endpoints closer;
+RETURN high;
+PERFORM Quick Sort method on bid title;
+	IF 
+		there are zero or one bid;
+		   done – begin is greater than or equal to end (there is nothing to sort);
+	PARTITION bids into high and low bids;
+		SORT low bids;
+			Recursively call quicksort using midpoint value (begin to mid);
+		SORT high bids;
+			Recursively call quicksort using midpoint value (begin +1 to end);
+//==============================================================
+// Selection Sort method logic over bid title
+//==============================================================
+INDEX the middle bid;
+DEFINE POS
+	POS is the position within the bids that marks sorted/unsorted
+		FOR
+			pos is less than (<) bid size;
+				min = pos;
+			increment pos (pos ++);
+			FOR 
+				j = pos + 1;
+				IF
+					j < 0;
+						min = j;
+			IF
+				min does not equal (! = ) pos;
+					SWAP pos and min; 
+
+//==============================================================
+// Main method
+//==============================================================
+PROCESS command line arguments;
+	SWITCH
+		Case 2: CREAT CSV path;
+			default is "eBid_Monthly_Sales.csv";
+DEFINE a vector to hold all the bids; 
+DEFINE method for clock ticks;
+CREATE menu for user input;
+	WHILE 
+		choice does NOT = 9;
+
+
+			SWITCH
+				case 1:
+					Load bids;
+						include clock tick method;
+				case 2:
+					loop and display the bids read;
+				case 3:
+					INITIALIZE timer;
+					CALL selection sort method;
+				case 4:
+					INITIALIZE timer;
+					CALL quick sort method;
+	IF 
+		User input = 9;
+			PRINT “Goodbye.”;
+RETURN 0;
+
+```
 
 
 ## Milestone Four
