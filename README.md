@@ -9,24 +9,24 @@ There are three programs within the repository displaying my different computer 
 
 ## Strengths (Self Assessment)
 
-### Software Engineering and Security
+##### Software Engineering and Security
 
 I entered the Computer Science Program at Southern New Hampshire University in September of 2017 and continued that trek for five years while working a full-time career and supporting a family.  I have learned how computer hardware, software and applications work in concert to provide problem solving tools for small and large business and personal users as well.  At the base of these problem solving tools are well written and informatively commented code that afford computer scientists not only the ability to solve the problem, but allows others to enhance the code and make it better or more versatile to solve other problems or modernize it for future endeavors.  This explores strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science and is shown in the Software Design and Engineering artifact presented in this portfolio in which I enhance the original authentication program written in Java by writing it in Python and improving the MD5 hash function’s speed, reducing resource utilization on the computer’s hardware.  This artifact also demonstrates how I have developed a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources by creating the MD5 authentication and reducing the amount of resources necessary to run it.  This artifact presentation also includes a flowchart and demonstrated my ability to design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts.  These artifacts demonstrate my strength and ability to develop and maintain code in multiple coding languages and produce flowcharts or in some cases Pseudocode.
 
-### Data Structures and Algorithms
+##### Data Structures and Algorithms
 
 As a working professional, I hope to solidify my future as a computer scientist in my existing career and possibly advance into a more lucrative career, should the opportunity present.  As data increases and technology advances, computer scientists will prevail as pillars within most if not all industries and be necessary to contend and maintain complex business systems.  Being able to design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while maintaining  the trade-offs involved in design choices is paramount.  I demonstrate my ability to construct and work with algorithms and data structures in my Binary Search Tree algorithm artifact written in the C++ language.  The original algorithm searches files in the CSV format, while the enhanced algorithm is written in the Python language and searches an XLSX formatted file using traversal method in a more efficient manner.  These artifacts demonstrate my strength to work with algorithms and data structures as a competent computer scientist.
  
 
-### Databases
+##### Databases
 
 The ability to create, read, update and delete data within a secure and accessible database in another trait of a well-educated and versatile computer scientist.  The ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals is demonstrated in my database artifact, where I display a dashboard created for a company to utilize a Mongo database, secure that database with credentials and am able to use the CRUD (Create, Read, Update and Delete) method within it.  I then show my abilities to create an enhanced ReSTful (Representation, State, and Transfer) API using a locally hosted Mongo database that includes JSON formatted collections.  These artifacts display my strength to create and use database structures.
 
-### Team Environments
+##### Team Environments
 
 During my courses at SNHU, I have learned that teamwork is imperative when designing complex programs and software.  To keep the team focused and project milestones met, methodologies such as Agile were introduced and discussed during courses to introduce us to productive team concepts.  Other sharing methods, such as GitHub and Bit Bucket were introduced to provide a team sharing platform to improve and advance code.  These sites allow blame and version recovery capabilities to correct mistakes and educate team members in a constructive manner.   Exposure to these team environments and tools will benefit me as I become a productive member of a team of computer scientists.  
 
-### Communication to Stakeholders
+##### Communication to Stakeholders
 
 The ability to communicate to stakeholders in written, oral and a visual manner is vital for a successful computer scientist.   Written communication may be in the form of comments within lines of code, readme files or a simple email.  Visual communication may be in flowcharts, diagrams or Power Point presentations.  Oral communication may be in person, in virtual meetings or in videos, such as the Code Review milestone of this portfolio.  Stakeholders may include potential employers, current superiors, customers, or other collaborators on the same team.  Communication delivered in a concise and prompt manner will benefit and promote computer scientists that utilize it in an educated manner.
 
@@ -52,8 +52,389 @@ Most of the challenge in enhancing the code was recalling the nuances of the Pyt
    
   
   ![image](https://user-images.githubusercontent.com/85906554/180590138-162ecfea-9cde-4ca8-a426-f58cb9a18172.png)
+  
+  ## Java Code:
+
+```
+
+/*Troy Smith
+ *IT-145-X4663
+ *Final Project
+ *Option 1: Authentication System
+ *April 22, 2018
+ */
+
+/*This program authenticates a user with the MD5 hash method
+ *The user is greeted with message from a text file 
+ * according their role within the system.
+ * The user is granted 3 tries before the system exits
+ * and notifies them they have failed to authenticate.
+ */
+
+package zooauthentication;
+//Import libraries and classes
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.Scanner;
+import static zooauthentication.UserRole.printAdminRole;
+import static zooauthentication.UserRole.printCoderRole;
+import static zooauthentication.UserRole.printVetRole;
+import static zooauthentication.UserRole.printZooKeepRole;
+
+public class UserLogin {
+    //Method used to prompt user for login information
+    public static void loginPrompt() {
+        //Declare string variable for user input
+        String userInput;
+        //Import scanner for user input
+        Scanner scanr4input = new Scanner(System.in);       
+        //Post welcome message, then prompt user to Login or Exit
+        System.out.println("********************************************");
+        System.out.println("* Welcome to the Zoo Authentication System *");
+        System.out.println("********************************************");
+        System.out.println("Enter \"LOGIN\" to use the system, or");
+        System.out.println("Enter \"EXIT\" to exit the system: ");
+        userInput = scanr4input.nextLine();
+        //Allow user to exit system
+        if (userInput.equalsIgnoreCase(
+                "EXIT")) {
+            System.exit(0);
+        }
+        //Prevent user from entering random text.  Must enter "EXIT" or "LOGIN"
+        while (!userInput.equalsIgnoreCase("LOGIN")) {
+            System.out.println("INVALID INPUT!  Enter \"EXIT\" or \"LOGIN\": ");
+            userInput = scanr4input.nextLine();
+            if (userInput.equalsIgnoreCase(
+                    "EXIT")) {
+                System.exit(0);
+            }
+        }
+        //Declare String Variable for user password
+        String usrPswrd;
+        //Declare flag to control flow in loops
+        boolean validUser = false;
+        //Declare variable to limit number of login attempts
+        int numTries = 3;
+        //Create scanner object to read credentials.txt file
+        BufferedReader credScanr = new BufferedReader(new InputStreamReader(System.in));
+        
+        //Prompt user for username and password
+        //Loop for login attempts
+        try {
+
+            do {
+                //Decrement number of attempts to login
+                numTries--;
+                //Username prompt
+                System.out.println("\nEnter Username or \"EXIT\" to quit: ");
+                //Get username from scanner input
+                String userName = credScanr.readLine();
+                //Loop to provide exit before attempts to 
+                if (userName.equalsIgnoreCase(
+                        "EXIT")) {
+                    System.exit(0);
+                }
+                //Password prompt
+                System.out.println("Enter Password: ");
+                //Get username from scanner input
+                String password = credScanr.readLine();
+                //Convert password using MD5 hash
+                MessageDigest md123 = MessageDigest.getInstance("md5");
+
+                md123.update(password.getBytes());
+
+                byte[] bytes12 = md123.digest();
+
+                StringBuilder sb1 = new StringBuilder();
+                for (byte b : bytes12) {
+                    sb1.append(String.format("%02x", b & 0xff));
+                }
+
+                usrPswrd = sb1.toString();
+                //Declares variable from lines of text in credentials.txt file
+                String credFileLine;
+                //Open credentials.txt file
+                BufferedReader credFile = new BufferedReader(new FileReader("G:\\My Drive\\SNHU\\IT145\\Final Project\\ZooAuthentication\\ZooAuthentication\\src\\zooauthentication\\credentials.txt"));
+                //Loop to find MD5 hash text
+                while ((credFileLine = credFile.readLine()) != null) {
+                    //Create array with line containing MD5 hash
+                    String[] lineINcredfile = credFileLine.split("\t");
+                    //Parse username in credentials.txt file
+                    if (lineINcredfile[0].equals(userName)) {
+                        //Parse password in credentials.txt file
+                        if (lineINcredfile[1].equals(usrPswrd)) {
+                            //Flag determines true if MD5 hash was found
+                            validUser = true;
+                            //Exit loop
+                            break;
+                        }
+                    }
+                }
+                
+                //Loop to search for user roles in credentials.txt file
+                if (validUser == true) {
+                    //Call method in UserRole class for admin.txt file
+                    if (credFileLine.contains("admin")) {
+                        //Call printAdminRole in UserRole class
+                        printAdminRole();
+                    }
+                    //Call method in UserRole class for veterinarian.txt file
+                    if (credFileLine.contains("veterinarian")) {
+                        //Call printVetRole in UserRole class
+                        printVetRole();
+                    }
+                    //Call method in UserRole class for zookeeper.txt file
+                    if (credFileLine.contains("zookeeper")) {
+                        //Call printZooKeepRole in UserRole class
+                        printZooKeepRole();
+                    }
+                    //Call method in UserRole class for coder.txt file
+                    if (credFileLine.contains("coder")) {
+                        //Call printZooKeepRole in UserRole class
+                        printCoderRole();
+                    }
+                    break;
+
+                } else {
+                    //Notify user if login attempt fails
+                    System.out.println("\nInvalid Username or Password.");
+                    //Encourage user to keep going
+                    System.out.println(" Try again.");
+                    //Notify user of number of attempts remaining (3,2,1)
+                    System.out.println(numTries + " more attemptes remain.");
+                    //Loop condition to terminate login attempts
+                if (numTries == 0) {
+                    //Print user notification of excessive attempts
+                    System.out.println("\nMAX attempts exceeded!");
+
+                    System.out.println(" Exiting ...");
+                    //Exit command
+                    System.exit(0);
+                }
+                }
+              //Stopping point for login attempts
+            } while (numTries > 0);
+          //Exception handler if credentials file fails to open
+        } catch (NoSuchAlgorithmException | IOException e1) {
+            System.out.println("\nFILE \"credentials.txt\" NOT FOUND!");
+            System.out.println("Please update line 93 of UserLogin class to correct path\n");
+        }
+    }
+}
+
+```
+
+## Python Code:
+
+```
+
+# Troy Smith
+# CS-499-H6771
+# Milestone Two
+# Zoo Authentication System (Converted from Java)
+
+#This program allows a user to authenticate into the system and
+#when successful authentication is acheived, the user is greeted
+#with a welcome message according to their role in the system.
+
+#Use the credentials.txt file for testing with usernames and passwords
+
+# Imports
+import sys
+import hashlib
 
 
+# Convert password into MD5 hash
+# This function uses the hashlib library to convert the user password (string) into hash
+
+def MD5ConversionFunc(userPassword, Type):
+    password = userPassword
+    userRole = Type
+
+    hashed = hashlib.md5(password.encode())  # uses hashlib to encode hashed password
+
+    hashed2 = hashed.hexdigest()  # returns the digest for the hashed pass; returns as string containing only -
+    # hexadecimals
+
+    passCheck(hashed2, userRole)
+
+    return hashed2  # Returns hashed password
+
+
+# Function that compares the entered password to the stored password
+# The hashed passwords are stored in the lists
+
+def passCheck(password, zooType):
+    userPassword = password
+    userRole = zooType
+
+    # List to store passwords
+
+    keeperPswrd = ["108de81c31bf9c622f76876b74e9285f", "17b1b7d8a706696ed220bc414f729ad3"]
+    adminPswrd = ["3e34baa4ee2ff767af8c120a496742b5", "0d107d09f5bbe40cade3de5c71e9e9b7"]
+    vetPswrd = ["a584efafa8f9ea7fe5cf18442f32b07b", "3adea92111e6307f8f2aae4721e77900"]
+    coderPswrd = ["68e47349d02711aebd5dcc7478b3972d"]
+
+    # Validate password and open the coresponding text file based on user role
+    # Once authentication is successful, FileOpen is called to open the correct file
+
+    if userPassword in keeperPswrd and userRole == "zookeeper":
+        FileOpen(userRole)
+
+    elif userPassword in adminPswrd and userRole == "admin":
+        FileOpen(userRole)
+
+    elif userPassword in vetPswrd and userRole == "veterinarian":
+        FileOpen(userRole)
+
+    elif userPassword in coderPswrd and userRole == "coder":
+        FileOpen(userRole)
+
+    else:
+        print("\nInvalid Password!\n")  # If password not valid, return to login loop
+
+
+# Function for opening and reading .txt files. Each file is related to one of the four user roles
+
+def FileOpen(userFileSelect):
+    if userFileSelect == "zookeeper":  # Read the zookeeper file and print text
+        file1 = open("zooKeeper.txt", "r")
+        print(file1.read())
+        print("\n")
+        LogOut()
+
+    if userFileSelect == "admin":  # Read the admin file and print text
+        file2 = open("admin.txt", "r")
+        print(file2.read())
+        print("\n")
+        LogOut()
+
+    if userFileSelect == "veterinarian":  # Read the veterinarian file and print text
+        file3 = open("veterinarian.txt", "r")
+        print(file3.read())
+        print("\n")
+        LogOut()
+
+    if userFileSelect == "coder":  # Read the coder file and print text
+        file4 = open("coder.txt", "r")
+        print(file4.read())
+        print("\n")
+        LogOut()
+
+
+# Logout function - Prompt user to logout or exit
+
+def LogOut():
+
+    logoutLoop = True
+
+    print("Logout/return to menu or exit?")
+    print("1 - Logout and return to menu")
+    print("2 - Exit")
+
+    while logoutLoop:  # Loop to ensure choice of 1 or 2
+
+        logoutSelection = input()
+
+        if logoutSelection == '1':
+            logoutLoop = False
+            main()  # Return to main function
+
+        elif logoutSelection == '2':
+            print("Goodbye!")
+            sys.exit()  # Exit / terminates the program
+
+        else:
+            print("Error, please type 1 or 2\n")
+            continue
+
+
+# Main function - used to prompt user to login or exit
+
+def main():
+    menu = True
+    attempts = 3
+
+    print("Welcome to the authentication system.")
+
+    while menu:  # Login loop
+
+        print("Please enter a number to continue: \n1-Login \n2-Exit")
+        menuSelection = input()
+
+        if menuSelection == '1':  # Menu selection 1
+            while attempts != 0:  # Counter to allow only 3 attempts
+                print("Enter Username: ")
+                userName = input()  # Store username
+
+                print("Enter Password: ")
+                userPassword = input()  # Store user password
+
+                if userName in ["griffin.keys", "donald.monkey"]:
+                    userRole = "zookeeper"  # Assigns user role zookeeper
+                    MD5ConversionFunc(userPassword, userRole)  # Call md5 password conversion
+                    attempts -= 1  # Attempt decrement
+
+                elif userName in ["rosario.dawson", "bruce.grizzlybear"]:
+                    userRole = "admin"
+                    MD5ConversionFunc(userPassword, userRole)
+                    attempts -= 1
+
+                elif userName in ["bernie.gorilla", "jerome.grizzlybear"]:
+                    userRole = "veterinarian"
+                    MD5ConversionFunc(userPassword, userRole)
+                    attempts -= 1
+
+                elif userName in ["troy.smith"]:
+                    userRole = "coder"
+                    MD5ConversionFunc(userPassword, userRole)
+                    attempts -= 1
+
+                else:
+                    print("Invalid user name!\n")
+                    attempts -= 1  # Attempt counter decrement
+                    print(attempts, "Attempt(s) left\n")
+
+                    if attempts == 0:
+                        print("\nOut of login attempts. Goodbye!")
+                        sys.exit()  # Exits if max attempts is reached
+
+                    continue  # Loop
+
+            break  # Loop
+
+        if menuSelection == '2':  # Menu selection 2
+
+            yesNoLoop = True  # Variable for loop
+            while yesNoLoop:  # Loop for yes or no choice
+
+                print("Are you sure you want to exit? (y/n)")
+                yesNo = input()
+
+                if yesNo in ['y', 'Y']:
+                    print("Goodbye!")
+                    sys.exit()  # Exits if user input is upper or lowercase Y
+
+                elif yesNo in ['n', 'N']:
+                    yesNoLoop = False  # Ends loop and returns to main if user input is uppercase or lowercase N
+                    main()
+
+                else:
+                    print("Error, please type y or n!")  # Error message for improper user input
+                    continue # Loop
+        else:
+            print("\nError, please enter 1 or 2\n\n")  # Must input correct data
+            continue  # Loop
+
+
+if __name__ == "__main__":
+    main()
+    
+```
 
 
 ## Milestone Three
