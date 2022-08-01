@@ -747,7 +747,59 @@ def userTreeSearchIn():
 	    
 ```
 
-## Singly Linked List Search:
+###### Singly Linked List Search:
+
+```
+
+def listSearch(itemData, amountData):
+    menuLoop = True
+    items = itemData
+    amounts = amountData
+    lst1 = []  # List for items and amounts
+
+    list1 = linkedList()
+    list1.head = node(items)  # head node is set to the items in the spreadsheet
+    n2 = node(" ")  # and white space
+    n3 = node(amounts)  # node 3 for the amounts
+
+    # Set node and list order
+
+    list1.head.next = n2
+    n2.next = n3
+
+    while menuLoop is True:  # loop
+
+        print("Would you like to add a new node? (y/n)")
+        yesNo = input()
+
+        if yesNo in ["y", "Y"]:
+
+            # Iterates ten times for user objects
+            # These objects are saved to a list
+
+            print("Enter new node: ")
+            print("Enter 10 objects: ")
+            for i in range(10):
+                n4 = raw_input()  # Takes input for list
+                lst1.append(n4)  # Append the list
+
+            list1.addNodeF(lst1)  # Places the list in the first node
+            list1.printList()  # Display the linked list
+            print("\n")
+            menuLoop = False  # Stop loop
+
+        elif yesNo in ["n", "N"]:
+            list1.printList()  # Display linked list without user data
+            print("\n")
+            menuLoop = False  # Stop loop
+
+        else:
+            print("Error, please enter y or n\n")
+            continue  # Ensure proper input
+	    
+```
+
+###### Accessing .xlsx Format:
 
 
 
