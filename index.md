@@ -711,6 +711,44 @@ class treeNode:
 
 ###### Traversal in Binary Tree:
 
+```
+
+# Inverse traversal tree function
+
+def userTreeSearchIn():
+    menuLoop = True
+    root = treeNode("Root")  # Assign root node
+
+    while menuLoop is True:  # Menu loop
+
+        print("Tree root is word 'Root' - Branches are created alphabetically")
+        print("Would you like to add a new leaf? (y/n)")
+        yesNo = input()
+
+        if yesNo in ["y", "Y"]:
+
+            # Loop for user to enter 10 'items' which will be put into the binary tree
+
+            print("Enter 10 items: ")
+            for i in range(10):
+                tree = raw_input()
+                root.addTree(tree)
+
+            print("\n")
+            print(root.inTraversal(root), "\n")  # Traversal for viewing tree
+            menuLoop = False  # Stop menu loop
+
+        elif yesNo in ["n", "N"]:
+            menuLoop = False  # Stop menu loop
+
+        else:
+            print("Error, please enter y or n\n")
+            continue  # Ensure proper input
+	    
+```
+
+## Singly Linked List Search:
+
 
 
 ## Milestone Four
