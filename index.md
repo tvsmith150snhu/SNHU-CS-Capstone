@@ -50,6 +50,7 @@ The original code had to be updated when files were moved or ran on other system
 
 Most of the challenge in enhancing the code was recalling the nuances of the Python language that I hadn’t used in quite a while.  Having a full time career while obtaining my Bachelor’s degree has resulted in taking one course at a time over the span of five years.  That leaves gaps in the last time I coded or used certain skills.  Thankfully reviewing my notes and visiting site on the web and watching videos brought back enough remembrance to get me through the challenge.   
    
+## Flowchart:
   
   ![image](https://user-images.githubusercontent.com/85906554/180590138-162ecfea-9cde-4ca8-a426-f58cb9a18172.png)
   
