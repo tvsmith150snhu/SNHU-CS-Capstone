@@ -1106,4 +1106,3 @@ module.exports = router
 ```
 
 # Thank you for taking the time to view my Portfolio!
-
