@@ -623,7 +623,7 @@ RETURN 0;
 
 ```
 
-## Datastructue Examples:
+## Data Structure Examples:
 
 ###### Classes:
 
