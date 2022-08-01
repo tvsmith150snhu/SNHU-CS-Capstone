@@ -801,6 +801,59 @@ def listSearch(itemData, amountData):
 
 ###### Accessing .xlsx Format:
 
+```
+
+def addData():
+    addLoop = True
+
+    while addLoop:  # Loop for y/n selection
+
+        print("Please type the name of the item: ")
+        userItem = input()  # Input for the item
+
+        print("How many? ")
+        userAmount = input()  # Input for the quantity
+
+        # Data frame for adding data to the excel spreadsheet
+        df2 = pd.DataFrame({"items": [userItem], "Amounts": [userAmount]})
+
+        # Use openpyxl to write to file
+        writer = pd.ExcelWriter("ItemList.xlsx", engine="openpyxl", mode='a', if_sheet_exists='overlay')
+
+        # Load spreadsheet as workbook
+        writer.book = load_workbook("ItemList.xlsx")
+
+        # Copy the current spreadsheet
+        writer.sheets = dict((ws.title, ws) for ws in writer.book.worksheets)
+
+        # Read the Excel file
+        reader = pd.read_excel(r'ItemList.xlsx')
+
+        # Write to the spreadsheet
+        df2.to_excel(writer, index=False, header=False, startrow=len(reader) + 1)
+
+        # Cease inputs
+        writer.close()
+
+        print("Data added\nAdd more data? (Y/N)")
+
+        # Choice to add more data or return to menu
+        yesNo = input()
+
+        if yesNo in ['y', 'Y']:
+            continue  # loop again
+
+        elif yesNo in ['n', 'N']:
+            addLoop = False  # Stop loop
+            main()  # the one and only main method
+        else:
+            print("Error, Returning to menu\n")
+            break  # Exit loop
+	    
+```
+
+##### Use of Pandas:
+
 
 
 ## Milestone Four
