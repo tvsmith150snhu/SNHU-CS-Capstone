@@ -623,6 +623,95 @@ RETURN 0;
 
 ```
 
+## Datastructue Examples:
+
+###### Classes:
+
+```
+
+# Class for linked list - Creates node containing head and next pointer
+
+class node:
+    def __init__(self, data=None):  # 'Constructor'
+        self.data = data
+        self.next = None
+
+
+# Linked list class - Contains linked list print and add node
+# Nodes are added to the front of the list instead of the back
+
+class linkedList:
+    def __init__(self):  # 'Constructor'
+        self.head = node()  # head node
+        self.tail = None  # Tail set to none
+        self.length = 0  # Length
+
+    # Add node to the front
+
+    def addNodeF(self, newData):
+        newNode = node(newData)
+
+        # New node added to the head of the list
+
+        newNode.next = self.head
+        self.head = newNode
+
+    # For printing linked list
+
+    def printList(self):
+        pn = self.head  # set head
+        while pn:
+            print(pn.data)  # print data
+            pn = pn.next  # set to next
+
+
+# Class for binary tree and search
+
+class treeNode:
+    def __init__(self, data=None):  # Constructor
+        self.data = data
+        self.left = None  # left branch
+        self.right = None  # right branch
+
+    # Create the tree - left and right nodes
+
+    def addTree(self, data=None):
+        if data == self.data:
+            return
+
+        # left branches (child)
+
+        if data < self.data:
+            if self.left is None:
+                self.left = treeNode(data)
+            else:
+                self.left.addTree(data)
+
+        # right branches (child)
+
+        else:
+            if self.right is None:
+                self.right = treeNode(data)
+            else:
+                self.right.addTree(data)
+
+    # Tree traversal
+    # Pre order traversal
+
+    def traversal(self, root=None):
+        elements = []  # list of elements
+        if root:
+            elements.append(root.data)  # current node
+            elements += self.traversal(root.left)  # traverse left branch from root
+            elements += self.traversal(root.right)  # traverse right branch from root
+
+        return elements  # Return list of elements
+	
+```
+
+###### Traversal in Binary Tree:
+
+
 
 ## Milestone Four
 **Artifact Selection**
