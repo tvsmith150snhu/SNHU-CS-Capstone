@@ -955,5 +955,5 @@ There weren’t as many challenges as I first anticipated, but one in particular
 
 In the end, I learned much more about REST and how it operates within the VS Code IDE.  I consider the VS Code to be my new favorite IDE!
 
-
+# Thank you for taking the time to view my Portfolio!
 
