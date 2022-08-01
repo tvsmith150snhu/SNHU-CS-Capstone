@@ -854,7 +854,23 @@ def addData():
 
 ##### Use of Pandas:
 
+```
 
+def main():
+    # Import the data sheet from Excel
+
+    # Pandas reads the Excel spreadsheet and assigns it to a variable
+
+    df2 = pd.read_excel("ItemList.xlsx", header=None, names=["items", "Amounts"])
+
+    # The two main columns are converted to lists (Items and Amounts)
+    # The variables are also declared here to be passed to other functions
+
+    items = df2["items"].values.tolist()
+    amounts = df2["Amounts"].values.tolist()
+    print("Data Loaded Successfully!\n")
+    
+```    
 
 ## Milestone Four
 **Artifact Selection**
