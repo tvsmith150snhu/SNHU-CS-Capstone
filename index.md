@@ -1,5 +1,6 @@
 # SNHU-CS-CAPSTONE
-by Troy Smith
+### by Troy Smith
+
 
 SNHU Capstone Portfolio for **Troy Smith CS-499**
 There are four Milestones related to my final project for the SNHU computer science capstone.
