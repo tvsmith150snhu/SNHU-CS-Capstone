@@ -56,6 +56,9 @@ The inclusion of these artifacts demonstrates my mastery of the following course
 
       -	I accomplish this in Milestone Two’s use of the MD5 hash authentication algorithm to authenticate users in to the Zoo system and Milestone Four’s original code of creating and authenticating users into the Grazioso Salvare dog rescue company.  Security measures are also found within the code of Milestones Two and Four with Try and Catch methods to ensure the proper files and responses occur.  My **skill to be security minded** in demonstrated in this Milestone and course outcome. 
 
+##### Summary
+
+My participation and completion of the Computer Science Program at Southern New Hampshire University has provided me the skills and confidence to become a productive and successful computer scientist.  Challenges faced as a working professional involved with the program have taught me valuable skills, such as time management, attention to detail, creativity, communication, teamwork and cooperation, analysis, organization and the ability to train and teach others.  The Milestones and artifacts included in this portfolio demonstrate my skills of software development, use of algorithms and data structures and use of databases while maintaining a security mindset and communicating effectively verbally, visually and in written form.
 
 
 ## Milestone One
