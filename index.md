@@ -2,7 +2,8 @@
 ### by Troy Smith
 
 
-SNHU Capstone Portfolio for **Troy Smith CS-499**
+SNHU Capstone Portfolio for **Troy Smith CS-499**.
+
 There are four Milestones related to my final project for the SNHU computer science capstone.
 
 There are three programs within the repository displaying my different computer science skills and abilities.
