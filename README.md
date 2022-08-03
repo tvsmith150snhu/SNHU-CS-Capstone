@@ -1,5 +1,9 @@
 # SNHU-CS-CAPSTONE
-SNHU Capstone Portfolio for **Troy Smith CS-499**
+### by Troy Smith
+
+
+SNHU Capstone Portfolio for **Troy Smith CS-499**.
+
 There are four Milestones related to my final project for the SNHU computer science capstone.
 
 There are three programs within the repository displaying my different computer science skills and abilities.
@@ -11,7 +15,7 @@ There are three programs within the repository displaying my different computer 
 
 ##### Software Engineering and Security
 
-I entered the Computer Science Program at Southern New Hampshire University in September of 2017 and continued that trek for five years while working a full-time career and supporting a family.  I have learned how computer hardware, software and applications work in concert to provide problem solving tools for small and large business and personal users as well.  At the base of these problem solving tools are well written and informatively commented code that afford computer scientists not only the ability to solve the problem, but allows others to enhance the code and make it better or more versatile to solve other problems or modernize it for future endeavors.  This explores strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science and is shown in the Software Design and Engineering artifact presented in this portfolio in which I enhance the original authentication program written in Java by writing it in Python and improving the MD5 hash function’s speed, reducing resource utilization on the computer’s hardware.  This artifact also demonstrates how I have developed a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources by creating the MD5 authentication and reducing the amount of resources necessary to run it.  This artifact presentation also includes a flowchart and demonstrated my ability to design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts.  These artifacts demonstrate my strength and ability to develop and maintain code in multiple coding languages and produce flowcharts or in some cases Pseudocode, which is included in Milestone Three.
+   I entered the Computer Science Program at Southern New Hampshire University in September of 2017 and continued that trek for five years while working a full-time career and supporting a family.  . I have developed the **skills of software development, analysis of data and data structures, the ability to communicate effectively, work with databases and developed a security mindset**, while learning how computer hardware, software and applications work in concert to provide problem solving tools for small and large business and personal users as well.  At the base of these problem solving tools are well written and informatively commented code that afford computer scientists not only the ability to solve the problem, but allows others to enhance the code and make it better or more versatile to solve other problems or modernize it for future endeavors.  This explores strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science and is shown in the Software Design and Engineering artifact presented in this portfolio in which I enhance the original authentication program written in Java by writing it in Python and improving the MD5 hash function’s speed, reducing resource utilization on the computer’s hardware.  This artifact also demonstrates how I have developed a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources by creating the MD5 authentication and reducing the amount of resources necessary to run it.  This artifact presentation also includes a flowchart and demonstrated my ability to design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts.  These artifacts demonstrate my strength and ability to develop and maintain code in multiple coding languages and produce flowcharts or in some cases Pseudocode, which is included in Milestone Three.
 
 ##### Data Structures and Algorithms
 
@@ -30,9 +34,36 @@ During my courses at SNHU, I have learned that teamwork is imperative when desig
 
 The ability to communicate to stakeholders in written, oral and a visual manner is vital for a successful computer scientist.   Written communication may be in the form of comments within lines of code, readme files or a simple email.  Visual communication may be in flowcharts, diagrams or Power Point presentations.  Oral communication may be in person, in virtual meetings or in videos, such as the Code Review milestone of this portfolio.  Stakeholders may include potential employers, current superiors, customers, or other collaborators on the same team.  Communication delivered in a concise and prompt manner will benefit and promote computer scientists that utilize it in an educated manner.
 
+##### Mastery of Course Outcomes (Narrative):
+
+The inclusion of these artifacts demonstrates my mastery of the following course outcomes of the Computer Science program at Southern New Hampshire University, which are:
+-	[CS-499-01] Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision making in the field of computer science.
+
+     -	I accomplished this in the enhanced artifact of Milestone Two, MD5 Conversion, by providing the fictitious Zoo a means to authenticate users into its system and greet them according to their role within the company with the MD5 hash algorithm (Message-Digest). The enhanced version made the code more portable while referencing the text files to welcome the users and involved less lines of code that was converted from Java language to Python.  The new algorithm is more efficient and decreases time and increases speed of the program.  My **skill of Software Development** is demonstrated in this Milestone and the course outcome. 
+
+-	 [CS-499-02] Design, develop, and deliver professional-quality oral, written, and visual communications that are coherent, technically sound, and appropriately adapted to specific audiences and contexts 
+
+      -	I accomplished this in the Flowchart and Pseudocode found within Milestone Two.  These tools provide visual communications and non-code terms that are available to those that can’t read code but are able to understand the purpose of what the program will do.  This is also apparent in Milestone One in the video of my Code Review and my ability to communicate through video, audio and screen capture.  My **skill to communicate effectively** is demonstrated in this Milestone and the course outcome.
+
+-	 [CS-499-03] Design and evaluate computing solutions that solve a given problem using algorithmic principles and computer science practices and standards appropriate to its solution, while managing the trade-offs involved in design choices (data structures and algorithms) 
+
+      -	I accomplished this Milestone Three artifact, Binary Search Traversal by improving the original C++ code to be more efficient and can search more modern XLXS formatted files compared to the original CSV formatted files. My **skill to analyze data and data structures** in demonstrated in this Milestone and course outcome.
+
+-	 [CS-499-04] Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals (software engineering/design/database) 
+
+      -	I accomplish this in Milestone Four with the use of my database skills to implement a Mongo database for the Grazioso Salvare dog rescue company to search local shelters for suitable breeds of dogs for animal and human rescue.  The enhanced version of the Milestone demonstrates my ability to use CRUD operations with a REST-full API to utilize a local Mongo DB.  My **skill to work with databases** is demonstrated in this Milestone and course outcome. 
+
+-	 [CS-499-05] Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources
+
+      -	I accomplish this in Milestone Two’s use of the MD5 hash authentication algorithm to authenticate users in to the Zoo system and Milestone Four’s original code of creating and authenticating users into the Grazioso Salvare dog rescue company.  Security measures are also found within the code of Milestones Two and Four with Try and Catch methods to ensure the proper files and responses occur.  My **skill to be security minded** in demonstrated in this Milestone and course outcome. 
+
+##### Summary
+
+My participation and completion of the Computer Science Program at Southern New Hampshire University has provided me the skills and confidence to become a productive and successful computer scientist.  Challenges faced as a working professional involved with the program have taught me valuable skills, such as time management, attention to detail, creativity, communication, teamwork and cooperation, analysis, organization and the ability to train and teach others.  The Milestones and artifacts included in this portfolio demonstrate my skills of software development, use of algorithms and data structures and use of databases while maintaining a security mindset and communicating effectively verbally, visually and in written form.
+
 
 ## Milestone One
-  This Milestone includes a recorded narrative of my selection of artifacts for the portfolio, the review of the original code and my plan to enhance the code.
+  This Milestone includes a recorded narrative of my selection of artifacts for the portfolio, the review of the original code and my plan to enhance the code.  This artifact is included to demonstrate my skill of communicating visually and orally to an audience. 
   
   Please enjoy my video of [Code Review](https://www.loom.com/share/1ad24d19309b48c3b39fcd978ce13a2c).
   
@@ -40,9 +71,9 @@ The ability to communicate to stakeholders in written, oral and a visual manner 
 ## Milestone Two
 The Artifact chosen to display my work and skills learned in Software Engineering and Design is the Authentication program written in Java code and created in my IT 145 course on April 22, 2018.  This program uses the MD5 hash method to authenticate users into the Zoo Authentication System allowing them three chances before stopping any further attempts.  Once successful authentication is achieved, the user is greeted with a message according to their role in the Zoo system, which are admin, veterinarian, zookeeper or coder.  
 
-Inclusion of this artifact in my portfolio demonstrates my ability write code in the Java language to solve problems, in this case a means to authenticate users into a specific system.  It also incorporates the Computer Science program outcome of demonstrating the ability to use well-founded and innovative techniques, skills and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry specific goals by proving my worth as a computer scientist that has the skills to code in Java and then transform that language into Python for the enhancement portion of the project.  I achieved this in the enhanced code by reducing the lines of code and containing all the necessary methods within the main function, instead of multiple files, demonstrating innovative technique, skills and tools. I have the skills to develop the code in a readable and transformable format that may be built upon for further enhancement alone, by someone else or within a team and possess the traits of a promising new computer scientist.
+Inclusion of this artifact in my portfolio demonstrates my ability write code in the Java language with best practices to solve problems, in this case a means to authenticate users into a specific system.  It also incorporates the Computer Science program outcome of demonstrating the ability to use well-founded and innovative techniques, skills and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry specific goals by proving my worth as a computer scientist that has the skills to code in Java with best practices and then transform that language into Python with best practices for the enhancement portion of the project.  I achieved this in the enhanced code by reducing the lines of code necessary to accomplish the same outcome, providing well commented code, and containing all the necessary methods within the main function, instead of multiple files, demonstrating innovative technique, skills and tools. I have the skills to develop the code in a readable and transformable format that may be built upon for further enhancement alone, by someone else or within a team and possess the traits of a promising new computer scientist.
 
-I have enhanced the program by writing it in the Python language and condensing it into less lines of code in one file instead of multiple files with more lines of code.  The original code also required the program to completely exit or stop before another user could authenticate.  The enhanced Python code allows the program to continue to run and allow another user to authenticate into the system.  
+I have enhanced the program by writing it in the Python language using best practices and condensing it into less lines of code in one file instead of multiple files with more lines of code.  The original code also required the program to completely exit or stop before another user could authenticate.  The enhanced Python code allows the program to continue to run and allow another user to authenticate into the system.  
 
 Python was the language used in my first introduction to coding in my CS 200 course in 2017 and has continued to intrigue me as an easy to read language that is versatile enough to be used in many different problem solving situations.  Although still new to coding and learning more each time I code, I find Python to be a very legible and straight forward language.  
 
@@ -1106,3 +1137,4 @@ module.exports = router
 ```
 
 # Thank you for taking the time to view my Portfolio!
+
